@@ -4,6 +4,12 @@ __pycache__/
 
 # C extensions
 *.so
+*.o
+*.a
+
+*.tmp
+*.lst
+*.map
 
 # Distribution / packaging
 .Python
@@ -14,7 +20,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/
 lib64/
 parts/
 sdist/
@@ -55,3 +61,41 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Firmware stuff.
+*~
+*.img.sym
+*.img
+*.bin
+*.elf
+version.h
+
+# Output from Radare2 / disassembly converted into HTML
+/annotations/d13.020/listing.txt
+/annotations/d13.020/listing.htm
+
+# blhooks program
+/hooks/blhook
+
+# leaflet stuff
+/leaflet/leaflet.aux
+/leaflet/leaflet.pdf
+
+# locales stuff
+/locales/localize
+
+# user/repeater lists
+/db/users.csv
+/db/repeaters.csv
+/db/custom.csv
+/db/stripped.csv
+/db/users.json
+/db/bmgroups.json
+/db/repeaters.json
+
+# firmware downloads
+firmware/dl
+
+# temporary symbols output
+/symbols/symbols_*
+/symbols/symgrate
